@@ -12,22 +12,6 @@ st.title("Dashboard de Clientes")
 
 st.sidebar.title('Filtro de Clientes')
 
-# Carregue sua imagem
-background_image = "Fundo.png"  # Substitua pelo caminho correto ou use caminhos relativos
-
-# Adicione a imagem ao fundo usando a biblioteca 'html'
-st.markdown(
-    f"""
-    <style>
-        .reportview-container {{
-            background: url("{background_image}") no-repeat center center fixed;
-            background-size: cover;
-        }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Filtro nome:
 
 filtro_Nome = st.sidebar.multiselect(
